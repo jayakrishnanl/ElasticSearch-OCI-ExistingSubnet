@@ -24,5 +24,3 @@
 
 # Other custom files
 env-vars.sh.orig.sh
-terraform.tfvars.orig
-terraform.tfvars
