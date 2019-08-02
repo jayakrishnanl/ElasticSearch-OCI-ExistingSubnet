@@ -1,7 +1,13 @@
 # ElasticSearch-OCI-ExistingSubnet
 
 ## Initialize the deployment
-Pick a module and change into the directory containing it (enterprise or community).
+Clone the module and change to the directory.
+
+Update the terraform variables mentioned in `env-vars.sh` and source it.
+
+Check and update the variable definition in `variables.tf` and update the values in `terraform.tfvars` file. 
+
+Make sure the subnet you specified is a Public Subnet with Route Table configured with Internet Gateway for outbound traffic. Also make sure the Security List associated with the subnet has Ingress rules allowed for 9200/TCP & 5601/TCP ports.
 
 We now need to initialize the directory with the module in it.  This makes the module aware of the OCI provider.  You can do this by running:
 
@@ -32,4 +38,9 @@ Create an SSH tunnel for ports `9200` and `5601` with the following command:
 
 Now you can browse to (http://localhost:9200) for Elasticsearch, and (http://localhost:5601) for Kibana.
 
+## Destroy the Deployment
+When you no longer need the deployment, you can run this command to destroy it:
 
+    terraform destroy
+
+You'll need to enter `yes` when prompted.
