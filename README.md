@@ -1,5 +1,9 @@
 # ElasticSearch-OCI-ExistingSubnet
 
+## Acknowledgement: 
+Folks who contributed with code, feedback, ideas, testing etc:
+-  Jeet Jagasia
+
 ## Initialize the deployment
 Clone the module and change to the directory.
 
