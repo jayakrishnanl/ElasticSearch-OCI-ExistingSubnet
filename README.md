@@ -48,3 +48,6 @@ When you no longer need the deployment, you can run this command to destroy it:
     terraform destroy
 
 You'll need to enter `yes` when prompted.
+
+## Disclaimer
+This is my personal GitHub project, the ideas expressed here do not represent my employer's point of view... Likewise the exact opposite is also definitely true!
